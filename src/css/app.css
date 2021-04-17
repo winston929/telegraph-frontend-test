@@ -1,0 +1,246 @@
+@import 'core/reset.css';
+@import 'elements/site-logo.css';
+
+@font-face {
+    font-family: 'Austin';
+    src: url('./fonts/Austin.woff2') format('woff2'),
+        url('./fonts/Austin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Austin';
+    src: url('./fonts/AustinBold.woff2') format('woff2'),
+        url('./fonts/AustinBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Austin';
+    margin: 0 40px 40px 40px;
+}
+
+hr {
+    border-style: ridge;
+}
+
+#content {
+    display: inline-block;
+    width: 65%;
+}
+
+header {
+    width: 50%;
+    margin: 50px 300px 50px;
+}
+
+h1 {
+    font-family: 'Austin';
+    font-size: 40px;
+    font-weight: 900;
+}
+
+a {
+    color: #3c9093;
+}
+
+#date {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+    color: #848484;
+}
+
+#description {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+#article-img-desktop {
+    display: block;
+    width: 100%;
+}
+
+#article-img-mobile {
+    display: none;
+}
+
+#article-body {
+    font-size: 16px;
+    margin: 15px 0 20px 300px;
+    line-height: 24px;
+}
+
+#article-body p {
+    padding: 15px 0 15px 0;
+}
+
+#comments-img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#comments {
+    display: none;
+    margin-left: 300px;
+}
+
+#comments-header {
+    position: relative;
+    margin: 25px 0 20px 0;
+}
+
+#comments-value {
+    font-style: italic;
+}
+
+#comments-counts {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 900;
+    vertical-align: top;
+}
+
+#comments-config {
+    display: inline-block;
+    font-family: 'Trebuchet MS', sans-serif;
+    position: absolute;
+    vertical-align: bottom;
+    right: 5px;
+    margin-top: 5px;
+}
+
+.comment-element {
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+.comment-name {
+    display: inline-block;
+    font-weight: 900;
+}
+
+.comment-date {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    color: #848484;
+}
+
+.comments-sort {
+    text-decoration: none;
+    color: #000;
+}
+
+.comment-likes {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    margin-top: 3px;
+}
+
+.comment-body {
+    margin-top: 20px;
+}
+
+#more-stories {
+    display: inline-block;
+    position: absolute;
+    width: 20%;
+    margin-left: 30px;
+}
+
+#more-stories-header {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.more-stories-title {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.more-stories-img {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+}
+
+.more-stories-content {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    margin: 5px 20px;
+}
+
+.more-stories-read-more {
+    color: #000;
+	text-decoration: underline;
+	text-decoration-color: #3c9093;
+	-webkit-text-decoration-color: #3c9093;
+    text-underline-offset: 4px;
+    line-height: 40px;
+}
+
+@media (max-width: 1100px) {
+    .site-logo {
+        width: 240px;
+        padding: 10px;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header {
+        width: 95%;
+        margin: 10px 10px 0 10px;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #article-img-desktop {
+        display: none;
+    }
+    
+    #article-img-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    #article-body {
+        margin: 10px;
+    }
+
+    #comments {
+        margin: 10px;
+    }
+
+    .comment-date {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    #more-stories {
+        display: block;
+        width: 100%;
+        margin: 10px;
+    }
+}

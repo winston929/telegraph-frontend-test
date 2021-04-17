@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="static/app.css" />
+		<script>
+			// TODO Make the fallback of these empty value of the object
+			window.articleData = {
+				meta: {{{ meta }}},
+				article: {{{ article }}},
+				posts: {{{ posts }}}
+  			};
+		</script>
+		<script src="static/app.bundle.js" defer></script>
+	</head>
+	<body>
+		{{> header }}
+		{{{ body }}}
+	</body>
+</html>
