@@ -2,13 +2,9 @@ const dateFormatter = require('./date-formatter');
 
 let currentSortType;
 
-const sortByNewest = (commentsArr) => {
-	return [...commentsArr].sort((a, b) => new Date(b.date) - new Date(a.date));
-};
+const sortByNewest = (commentsArr) => [...commentsArr].sort((a, b) => new Date(b.date) - new Date(a.date));
 
-const sortByLikes = (commentsArr) => {
-	return [...commentsArr].sort((a, b) => b.likes - a.likes);
-};
+const sortByLikes = (commentsArr) => [...commentsArr].sort((a, b) => b.likes - a.likes);
 
 const loadCommentsData = async () => {
 	try {
@@ -101,5 +97,5 @@ module.exports = {
 	init,
 	loadCommentsData,
 	sortByNewest,
-	sortByLikes,
+	sortByLikes
 };

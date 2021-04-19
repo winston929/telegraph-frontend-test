@@ -5,13 +5,9 @@ const padding = (value) => ('0' + value).slice(-2);
 const get12HourTime = (value) => value % 12;
 const getAMPM = (value) => value >= 12 ? 'pm' : 'am';
 
-const getArticleDateFormat = (date) => {
-    return `${weekdayArr[date.getDay()]} ${padding(date.getDate())} ${monthArr[date.getMonth()]} ${date.getFullYear()}, ${get12HourTime(date.getHours())}:${padding(date.getMinutes())}${getAMPM(date.getHours())}`;
-};
+const getArticleDateFormat = (date) => `${weekdayArr[date.getDay()]} ${padding(date.getDate())} ${monthArr[date.getMonth()]} ${date.getFullYear()}, ${get12HourTime(date.getHours())}:${padding(date.getMinutes())}${getAMPM(date.getHours())}`;
 
-const getCommentsDateFormat = (date) => {
-    return `${padding(date.getDate())} ${monthArr[date.getMonth()].slice(0, 3)} ${date.getFullYear()} ${get12HourTime(date.getHours())}:${padding(date.getMinutes())}${getAMPM(date.getHours()).toUpperCase()}`;
-};
+const getCommentsDateFormat = (date) => `${padding(date.getDate())} ${monthArr[date.getMonth()].slice(0, 3)} ${date.getFullYear()} ${get12HourTime(date.getHours())}:${padding(date.getMinutes())}${getAMPM(date.getHours()).toUpperCase()}`;
 
 const dateFormatter = (isoFormat, isArticle) => {
     const date = new Date(isoFormat);
